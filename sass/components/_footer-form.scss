@@ -1,0 +1,132 @@
+/* footer-form */
+
+// .footer {
+//   &__form {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   &__input {
+//     margin: 0;
+//     margin-right: 12px;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     padding-left: 16px;
+//     width: 358px;
+//     height: 50px;
+//     color: rgba(255, 255, 255, 0.3);
+//     background-color: #2f303a;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: 4px;
+//   }
+
+//   &__button {
+//     border: 1px solid $accent-color;
+//     background-color: $accent-color;
+//     color: $white-color;
+//     font-weight: 700;
+//     width: 200px;
+//     height: 50px;
+//     letter-spacing: 0.06em;
+//     border-radius: 4px;
+//     padding: 10px 29px;
+//     display: flex;
+//     align-items: center;
+//     cursor: pointer;
+//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   &__button-icon {
+//     margin-left: 10px;
+//     fill: currentColor;
+//   }
+// }
+
+// .footer__input {
+//   &:placeholder {
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+// .footer__input {
+//   &:focus {
+//     outline: none;
+//     border-color: rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+// .footer__button {
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+// }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    &__form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      margin: 0;
+      margin-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 16px;
+      width: 450px;
+      height: 50px;
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #2f303a;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+    }
+
+    &__button {
+      border: 1px solid $accent-color;
+      background-color: $accent-color;
+      color: $white-color;
+      font-weight: 700;
+      width: 200px;
+      height: 50px;
+      letter-spacing: 0.06em;
+      border-radius: 4px;
+      padding: 10px 29px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button-icon {
+      margin-left: 10px;
+      fill: currentColor;
+    }
+  }
+
+  .footer__input {
+    &:placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .footer__input {
+    &:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .footer__button {
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

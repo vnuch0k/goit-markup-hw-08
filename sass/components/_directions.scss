@@ -1,0 +1,47 @@
+/* directions list */
+// .directions {
+//   color: $primary-text-color;
+//   display: flex;
+
+//   &__item {
+//     width: calc((100% - 60px) / 3);
+//     margin-right: 30px;
+//   }
+
+//   &__thumb {
+//     position: relative;
+//     height: 294px;
+//   }
+
+//   &__description {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     text-align: center;
+//     width: 100%;
+//     padding-top: 27px;
+//     padding-bottom: 27px;
+//     background-color: rgba(47, 48, 58, 0.8);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03;
+//     text-transform: uppercase;
+//     color: $white-color;
+//     background-color: rgba(47, 48, 58, 0.8);
+//   }
+// }
+
+// .directions__item {
+//   &:nth-child(3n) {
+//     margin-right: 0px;
+//   }
+// }
+
+@media screen and (max-width: 767px) {
+  .section {
+    &.no-top-padding {
+      display: none;
+    }
+  }
+}

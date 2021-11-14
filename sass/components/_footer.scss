@@ -1,0 +1,215 @@
+/* footer */
+
+// .footer {
+//   background-color: #2f303a;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+// .footer {
+//   .container {
+//     display: flex;
+//     align-items: baseline;
+//   }
+
+//   &__section:not(:last-child) {
+//     margin-right: 70px;
+//   }
+
+//   &__section.social {
+//     margin-right: 93px;
+//   }
+// }
+
+// /* logo bottom */
+// .logo__bottom--color {
+//   color: $white-color;
+// }
+
+// .footer {
+//   .logo {
+//     display: block;
+//     margin-bottom: 20px;
+//   }
+
+//   &__title {
+//     color: $white-color;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// /* street adress */
+// .street {
+//   color: $white-color;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   background-color: #2f303a;
+//   font-style: normal;
+//   margin-bottom: 9px;
+//   display: block;
+// }
+
+// /* contacts bottom */
+// .list {
+//   &__contact {
+//     color: rgba(255, 255, 255, 0.6);
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     font-style: normal;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
+// .list__contact {
+//   &:hover {
+//     color: $accent-color;
+//   }
+// }
+
+// .list__item {
+//   &:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .socials {
+//   &__footer-items {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     color: $white-color;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
+// .socials__link-footer {
+//   &:not(:last-child) {
+//     margin-right: 10px;
+//   }
+// }
+
+// .socials__footer-items {
+//   &:hover,
+//   &:focus {
+//     color: $white-color;
+//     background-color: $accent-color;
+//   }
+// }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+      text-align: center;
+    }
+  }
+
+  /* logo bottom */
+  .logo__bottom--color {
+    color: $white-color;
+  }
+
+  .footer {
+    .logo {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      color: $white-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+  /* street adress */
+  .street {
+    color: $white-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: #2f303a;
+    font-style: normal;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  /* contacts bottom */
+  .list {
+    margin-bottom: 60px;
+    justify-content: center;
+
+    &__contact {
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      font-style: normal;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .list__contact {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .list__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .socials {
+    &.list {
+      display: flex;
+    }
+
+    &.list--footer {
+      justify-content: center;
+    }
+
+    &__footer-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      color: $white-color;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .socials__link-footer {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .socials__footer-items {
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $accent-color;
+    }
+  }
+}

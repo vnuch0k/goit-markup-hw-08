@@ -1,0 +1,130 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $white-color;
+  color: #212121;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+img {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+// nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section-title {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+  }
+}
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .section-title {
+//   color: $primary-text-color;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.16;
+//   text-align: center;
+//   margin-bottom: 50px;
+//   letter-spacing: 0.03em;
+// }
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+/* hidden titles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* button */
+.button {
+  color: $primary-text-color;
+  background-color: $secondary-background-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
