@@ -27,6 +27,70 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo__header--black">Studio</span></a
           >
+
+          <button type="button" class="burger-btn" data-menu-open>
+            <svg class="burger-btn__icon" width="24" height="16">
+              <use href="./images/burger-icons.svg#icon-burger-close"></use>
+            </svg>
+          </button>
+
+          <div class="burger-menu" data-menu>
+            <button type="button" class="burger-menu__button" data-menu-close>
+              <svg class="burger-menu__icon" width="19px" height="19px">
+                <use href="./images/burger-icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+            <nav class="burger-nav">
+              <ul class="burger-nav__list">
+                <li class="burger-nav__item">
+                  <a
+                    class="burger-nav__link burger-nav__link--current"
+                    href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="burger-nav__item">
+                  <a class="burger-nav__link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="burger-nav__item">
+                  <a class="burger-nav__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="burger-contacts">
+              <li class="burger-contacts__item">
+                <a
+                  class="burger-contacts__link burger-contacts__link--tel"
+                  href=""
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="burger-contacts__item">
+                <a
+                  class="burger-contacts__link burger-contacts__link--email"
+                  href=""
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="burger-social">
+              <li class="burger-social__item">
+                <a class="burger-social__link" href="">Instagram</a>
+              </li>
+              <li class="burger-social__item">
+                <a class="burger-social__link" href="">Twitter</a>
+              </li>
+              <li class="burger-social__item">
+                <a class="burger-social__link" href="">Facebook</a>
+              </li>
+              <li class="burger-social__item">
+                <a class="burger-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="" class="site-nav__link link site-nav__link--current"
@@ -618,5 +682,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/menu.js"></script>
   </body>
 </html>

@@ -30,6 +30,13 @@ textarea {
   resize: none;
 }
 
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
 // nav {
 //   display: flex;
 //   align-items: center;
@@ -48,6 +55,7 @@ textarea {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     min-width: 320px;
