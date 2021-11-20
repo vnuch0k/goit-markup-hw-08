@@ -43,6 +43,14 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  @media screen and (max-width: 479px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  @media screen and (min-width: 480px) {
+    padding-left: calc((100% - 480px) / 2 + 40px);
+    padding-right: calc((100% - 480px) / 2 + 40px);
+  }
 }
 
 .burger-menu.is-open {

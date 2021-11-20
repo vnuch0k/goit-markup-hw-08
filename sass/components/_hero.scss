@@ -70,16 +70,6 @@
         url(../images/background-hero-mobile1x.jpeg);
       background-size: cover;
       background-position: center;
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .hero {
-          &__overlay {
-            background-image: url(../images/background-hero-mobile2x.jpeg);
-          }
-        }
-      }
     }
 
     &__title {
@@ -180,6 +170,16 @@
       color: $accent-color;
     }
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      &__overlay {
+        background-image: url(../images/background-hero-mobile2x.jpeg);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -201,16 +201,6 @@
         url(../images/background-hero.jpeg);
       background-size: cover;
       background-position: center;
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .hero {
-          &__overlay {
-            background-image: url(../images/tabletx2.jpeg);
-          }
-        }
-      }
     }
 
     &__title {
@@ -316,6 +306,16 @@
       color: $accent-color;
     }
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      &__overlay {
+        background-image: url(../images/tabletx2.jpeg);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -336,16 +336,6 @@
         url(../images/background-hero.jpeg);
       background-size: cover;
       background-position: center;
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .hero {
-          &__overlay {
-            background-image: url(../images/tabletx2.jpeg);
-          }
-        }
-      }
     }
 
     &__title {
@@ -449,6 +439,16 @@
     &:hover,
     &:focus {
       color: $accent-color;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      &__overlay {
+        background-image: url(../images/tabletx2.jpeg);
+      }
     }
   }
 }

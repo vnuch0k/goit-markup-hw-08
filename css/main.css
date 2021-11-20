@@ -221,6 +221,20 @@ li {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .burger-menu {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .burger-menu {
+    padding-left: calc((100% - 480px) / 2 + 40px);
+    padding-right: calc((100% - 480px) / 2 + 40px);
+  }
+}
+
 .burger-menu.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -740,15 +754,6 @@ li {
     background-size: cover;
     background-position: center;
   }
-}
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__overlay .hero__overlay {
-    background-image: url(../images/background-hero-mobile2x.jpeg);
-  }
-}
-
-@media screen and (max-width: 767px) {
   .hero__title {
     color: #ffffff;
     font-size: 26px;
@@ -851,6 +856,12 @@ li {
   }
 }
 
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/background-hero-mobile2x.jpeg);
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* hero */
   .hero {
@@ -866,15 +877,6 @@ li {
     background-size: cover;
     background-position: center;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .hero__overlay .hero__overlay {
-    background-image: url(../images/tabletx2.jpeg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
     color: #ffffff;
     font-size: 26px;
@@ -978,6 +980,12 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/tabletx2.jpeg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     background-color: #2f303a;
@@ -993,15 +1001,6 @@ li {
     background-size: cover;
     background-position: center;
   }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__overlay .hero__overlay {
-    background-image: url(../images/tabletx2.jpeg);
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .hero__title {
     color: #ffffff;
     font-size: 44px;
@@ -1102,6 +1101,12 @@ li {
   }
   .overlay-button:hover, .overlay-button:focus {
     color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/tabletx2.jpeg);
   }
 }
 
