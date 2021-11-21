@@ -315,6 +315,12 @@ li {
   color: #2196f3;
 }
 
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .burger-contacts__link--tel {
+    font-size: 20px;
+  }
+}
+
 .burger-contacts__link--email {
   font-weight: 500;
   font-size: 24px;
