@@ -176,7 +176,12 @@
     screen and (min-resolution: 2dppx) {
     .hero {
       &__overlay {
-        background-image: url(../images/background-hero-mobile2x.jpeg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/background-hero-mobile2x.jpeg);
       }
     }
   }
@@ -312,7 +317,12 @@
     screen and (min-resolution: 2dppx) {
     .hero {
       &__overlay {
-        background-image: url(../images/tabletx2.jpeg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/tabletx2.jpeg);
       }
     }
   }
@@ -447,7 +457,12 @@
     screen and (min-resolution: 2dppx) {
     .hero {
       &__overlay {
-        background-image: url(../images/tabletx2.jpeg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/tabletx2.jpeg);
       }
     }
   }
