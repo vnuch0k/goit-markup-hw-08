@@ -58,7 +58,6 @@ li {
 
 @media screen and (max-width: 767px) {
   .container {
-    min-width: 320px;
     max-width: 480px;
   }
 }
@@ -272,6 +271,9 @@ li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .burger-nav__item:not(:last-child) {
@@ -294,6 +296,7 @@ li {
 
 .burger-nav__link--current {
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .burger-contacts {
@@ -1948,7 +1951,85 @@ li {
 }
 
 /* section team */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .section.team {
+    background-color: #f5f4fa;
+    width: 100%;
+  }
+  .members__item {
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .members__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .members__photo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .members__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+  .members__work-position {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+  }
+  .members__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .socials.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socials__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .socials__icon {
+    fill: currentColor;
+  }
+  .socials__items:hover, .socials__items:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .section.team {
     background-color: #f5f4fa;
     width: 100%;
@@ -2167,7 +2248,41 @@ li {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .clients.list {
+    text-align: center;
+  }
+  .client:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .client__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 90px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client__logo {
+    fill: currentColor;
+  }
+  .client__link:hover, .client__link:focus {
+    color: #2196f3;
+    border: 1px solid #2196f3;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients.list {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -78,6 +78,7 @@
 .burger-nav {
   margin-bottom: 100px;
   flex-grow: 1;
+  align-items: flex-start;
 }
 
 .burger-nav__item:not(:last-child) {
@@ -98,6 +99,7 @@
 
   &--current {
     color: $accent-color;
+    text-decoration: underline;
   }
 }
 
