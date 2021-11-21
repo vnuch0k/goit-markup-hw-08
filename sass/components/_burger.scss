@@ -154,6 +154,10 @@
   color: $accent-color;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    font-size: 13px;
+  }
 }
 
 .burger-social__item:not(:last-child) .burger-social__link::after {
